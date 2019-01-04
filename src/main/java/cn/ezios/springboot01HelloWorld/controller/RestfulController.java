@@ -24,7 +24,7 @@ public class RestfulController {
         return stringObjectHashMap;
     }
 
-    @RequestMapping(value = "/{city_id}/{user_id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/rest/{city_id}/{user_id}",method = RequestMethod.GET)
     Map<String,Object> testGet(@PathVariable("city_id") String cityId,@PathVariable("user_id") String user_id){
         map.clear();
         map.put("city",cityId);
